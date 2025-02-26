@@ -1,0 +1,19 @@
+<launch>
+  <arg name="num_robots" default="5"/>
+  <arg name="world" default="warehouse"/>
+  
+  <!-- Gazebo Simulation -->
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_$(arg world).launch">
+    <arg name="world" value="$(find warehouse_swarm)/worlds/$(arg world).world"/>
+  </include>
+
+  <!-- Swarm Controller -->
+  <node pkg="warehouse_swarm" type="main.py" name="swarm_controller" output="screen">
+    <param name="num_robots" value="$(arg num_robots)"/>
+    <rosparam command="load" file="$(find warehouse_swarm)/config/production.yaml"/>
+  </node>
+
+  <!-- RViz Visualization -->
+  <node pkg="rviz" type="rviz" name="rviz" 
+        args="-d $(find warehouse_swarm)/config/swarm.rviz"/>
+</launch>
