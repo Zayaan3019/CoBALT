@@ -20,7 +20,7 @@ CoBALT is an intelligent, multi-agent system designed to optimize warehouse logi
 # Installation & Setup
 
 1. Clone the repository:
-git clone https://github.com/your-repo/RL-ACO.git
+git clone https://github.com/your-repo/CoBALT.git
 
 2. Set up the ROS environment:
 Ensure ROS is installed and sourced correctly.
