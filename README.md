@@ -44,9 +44,7 @@ python main.py
 2. Multi-Agent Swarm Coordination: Implements decentralized communication protocols for scalable task management.
 3. Dynamic Simulation Environment: Enables testing of various configurations in a realistic virtual warehouse setup.
 
-Future Enhancements
-Extend support for larger-scale warehouses with hundreds of bots.
-
-Integrate advanced RL algorithms like PPO or SAC for enhanced learning efficiency.
-
-Add predictive analytics to forecast task completion times based on historical data.
+# Future Enhancements
+1. Extend support for larger-scale warehouses with hundreds of bots.
+2. Integrate advanced RL algorithms like PPO or SAC for enhanced learning efficiency.
+3. Add predictive analytics to forecast task completion times based on historical data.
